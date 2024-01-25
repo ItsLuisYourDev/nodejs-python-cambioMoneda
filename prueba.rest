@@ -1,0 +1,28 @@
+###
+GET http://localhost/moneda
+
+###
+POST http://localhost/moneda
+Content-Type: application/json
+
+{
+    "monedaOrigen":"euro",
+    "valor":3,
+    "monedaDestino": "dolar"
+}
+
+###
+PUT http://localhost/moneda
+Content-Type: application/json
+
+{
+    "id":"63efbddc357bc4267580b1a3",
+    "monedaOrigen":"dolar",
+    "valor":3,
+    "monedaDestino":"sol"
+}
+
+###
+DELETE http://localhost:3015/api/equipo/63cea2b9c2bca7cca0952c1d HTTP/1.1
+Content-Type: application/json
+
